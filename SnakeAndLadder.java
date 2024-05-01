@@ -16,6 +16,14 @@ public class SnakeAndLadder {
                 // If we get Snake then Add with dice number
                 player1 = player1 + dice;
             }
+            // to get perfect 100 position to player
+            if (player1>100){
+                player1 = player1 - dice;
+            }
+            else if (player1==100){
+                System.out.print(player1+"\t");
+                break;
+            }
             System.out.print(player1+"\t");
         }
     }
